@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+  schedule:
+  - cron: "0 */2 * * *" # Runs every 2hr
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout Repo
+    - uses: actions/checkout@develop
+    - name: build code
+      run: make all
+    - name: clean binaries
+      run: make clean

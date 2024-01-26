@@ -11,9 +11,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout Repo
       - uses: actions/checkout@v1.0.0_DEV

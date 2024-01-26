@@ -19,5 +19,5 @@ jobs:
       - name: build code
         run: make all
         
-      # - name: clean binaries
-      #   run: make clean
+      - name: clean binaries
+        run: make clean

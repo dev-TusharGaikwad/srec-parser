@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: checkout Repo
-      - uses: actions/checkout@develop
+      - uses: actions/checkout@v1.0.0_DEV
     
     # - name: checkout Repo
     # - uses: actions/checkout@develop

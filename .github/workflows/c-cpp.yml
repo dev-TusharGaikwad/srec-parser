@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "develop" ]
   schedule:
-  - cron: "0 */2 * * *" # Runs every 2hr
+    - cron: "0 */2 * * *" # Runs every 2hr
   workflow_dispatch:
 
 jobs:
@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout Repo
-    - uses: actions/checkout@develop
+      - name: checkout Repo
+      - uses: actions/checkout@develop
     
     # - name: checkout Repo
     # - uses: actions/checkout@develop

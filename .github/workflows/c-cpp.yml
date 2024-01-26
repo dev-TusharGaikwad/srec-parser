@@ -17,7 +17,10 @@ jobs:
     steps:
     - name: checkout Repo
     - uses: actions/checkout@develop
-    - name: build code
-      run: make all
-    - name: clean binaries
-      run: make clean
+    
+    # - name: checkout Repo
+    # - uses: actions/checkout@develop
+    # - name: build code
+    #   run: make all
+    # - name: clean binaries
+    #   run: make clean
